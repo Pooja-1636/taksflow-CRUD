@@ -1,21 +1,71 @@
-<div align="center">
-<img width="1200" height="475" alt="GHBanner" src="https://github.com/user-attachments/assets/0aa67016-6eaf-458a-adb2-6e31a0763ed6" />
-</div>
+# Frontend Developer Task
 
-# Run and deploy your AI Studio app
+This is a simple **full-stack web application** with authentication and a dashboard. The app allows users to **register, login**, and manage tasks using **CRUD operations**.
 
-This contains everything you need to run your app locally.
+---
 
-View your app in AI Studio: https://ai.studio/apps/temp/1
+## Features
 
-## Run Locally
+* User Signup and Login
+* JWT-based Authentication
+* Protected Dashboard
+* Create, Read, Update, Delete (CRUD) Tasks
+* Logout
+* Responsive UI
 
-**Prerequisites:**  Node.js
+---
 
+## Tech Used
 
-1. Install dependencies:
-   `npm install`
-2. Set the `GEMINI_API_KEY` in [.env.local](.env.local) to your Gemini API key
-3. Run the app:
-   `npm run dev`
-"# taksflow-CRUD" 
+* React.js
+* Tailwind CSS
+* Node.js
+* Express.js
+* MongoDB
+* JWT, bcrypt
+
+---
+
+## How to Run
+
+### Backend
+
+```bash
+cd server
+npm install
+npm start
+```
+
+### Frontend
+
+```bash
+cd client
+npm install
+npm run dev
+```
+
+---
+
+## APIs
+
+* POST /auth/register
+* POST /auth/login
+* GET /tasks
+* POST /tasks
+* PUT /tasks/:id
+* DELETE /tasks/:id
+
+---
+
+## Notes
+
+* Passwords are hashed
+* Dashboard is accessible only after login
+* Code is modular and scalable
+
+---
+
+## Submission
+
+* GitHub repo contains frontend and backend
+* APIs tested using Postman
